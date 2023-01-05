@@ -1,0 +1,9 @@
+export var players = [];
+export var entity = [];
+export var shapes = [];
+export var ai = [];
+export var dominations = [];
+export var teambases = [];
+export var walls = [];
+export var arenas = [];
+export var box = [];

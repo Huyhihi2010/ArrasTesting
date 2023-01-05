@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>vorry.arras.io</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <link rel="shortcut icon" href="./img/ui/favi-icongame.ico" type="image/x-icon">
+    </head>
+    <body oncontextmenu="return false;">
+        <script>
+            // document.addEventListener('keydown', function(e){
+            //     if(e.ctrlKey || e.keyCode === 123) {
+            //         e.preventDefault();
+            //         e.defaultPrevented();
+            //     }
+            // })
+        </script>
+        <!--BOX TANK-->
+        <div class="tank-box" id="tank-box"></div>
+        <!--MAIN-->
+        <div class="menu-game" id="menu-game">
+            <div class="bg-menu">
+                <div class="what-app" id="bg-control">
+                    <img src="./img/ui/admin_game.png" width="100%" style="border-radius: 20px; box-shadow: 0px 0px 10px red, 0px 0px 20px red, 0px 0px 40px red;"><br>
+                    <div class="btn-bg-app">
+                        <a href="https://discord.gg/PUF7wuWU" target="_blank"><button class="btn-app" id="btn-discord">Discord</button></a>
+                        <a href="https://discord.gg/rxtqSENu" target="_blank"><button class="btn-app" id="btn-discord">Discord More</button></a>
+                    </div><hr>
+                    <div class="bg-how-to">
+                        <span>
+                            Game don't have a mutiplayer
+                            <hr>
+                            <div style="color: white;background-color: black;text-shadow: 0px 0px 10px white, 0px 0px 20px white, 0px 0px 40px white;">
+                                <span>Keybroad</span><br>
+                                <span>Press E : Auto Fire</span><br>
+                                <span>Press C : Auto Spin</span><br>
+                                <span>Press R : Start/Stop addon or turret</span>
+                            </div>
+                            <hr>
+                        </span>
+                    </div>
+                </div>
+                <div class="bg-menu-start" id="bg-control">
+                    <div class="icon-game" style="background-color: beige; margin-left: 4px; border-radius: 20px;">
+                        <img src="./img/ui/favi-icongame2.png" width="20%"><h1>vorry.arras.io</h1>
+                    </div>
+                    <div class="gamemodes" id="gamemodes" style="background-color: rgb(126, 127, 160); border-radius: 10px; height: 35%; box-shadow: 0px 5px 10px gray, 0px -5px 10px gray;">
+                    </div><br>
+                    <input type="text" placeholder="Enter Name" maxlength="25" class="input-name" id="input-name">
+                    <br>
+                    <button class="btn-startGame" id="btn-startGame">Play</button>
+                </div>
+                <div class="what-new-bg" id="bg-control">
+                    <h3 style="color: white; text-shadow: 1px 1px 0px rgb(233, 233, 233);"> New Update </h3>
+                    <div class="event-new" id="event-new"></div>
+                </div>
+            </div>
+        </div>
+        <!--SCRIPT-->
+        <div>
+            <canvas id="canvas-game" class="canvas"></canvas>
+
+            <script src="../src/const/gsap.min.js" type="text/javascript"></script>
+            <script src="../src/const/ui.js" type="module"></script>
+
+            <script src="./changeLog.js" type="module"></script>
+            <script src="./index.js" type="module"></script>
+        </div>
+    </body>
+</html>

@@ -71,7 +71,7 @@ export async function dominationArena(game) {
             if(closerArena) {
                 setTimeout(() => {
                     if(SpawnArenaCloser) {
-                        get.receive('m', "Arena Closer: No player join!");
+                        get.receive('m', "Arena Closer: No player can join!");
                         arenas.forEach((arena) => {
                             for(var i = 0; i < 16; i++) {
                                 entity.push(new ArenaCloser(Math.random() * (arena.size.width * 2) + (arena.pos.x - arena.size.width), Math.random() * (arena.size.height * 2) + (arena.pos.y - arena.size.height)));
